@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  myapp:
+    build: .
+    container_name: ewon
+    ports:
+      - "5000:5000"
+    devices:
+      - "/dev/ttyS0:/dev/ttyS0"
+    privileged: true
